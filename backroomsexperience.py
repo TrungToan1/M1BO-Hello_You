@@ -143,7 +143,7 @@ wait(w)
 a = "A shiver goes down your spine as you hear a mysterious splash off in the distance."
 typewriter(a)
 wait(w)
-a = 
+a = ""
             
                
         

@@ -87,6 +87,27 @@ while True:
         typewriter(a)
         wait(w)
         a = "\nYour sanity is diminishing."
+        typewriter(a)
+        wait(w)
+        a = "\nYou see a smiler approaching your way"
+        typewriter(a)
+        wait(w)
+        w = 0.1
+        while True:
+            print("\nA. Show Smiler information")
+            wait(w)
+            print("B. Skip")
+            info_smiler = input("type a or b: ")
+            if info_smiler == "a":
+                print("Smilers are hostile entities, recognizable by their signature reflective eyes and gleaming teeth.")
+                wait(w)
+                print("These entities only appear in dark corners or doorways, where the rest of their form is not visible.")
+                wait(w)
+                print("Sighting of these entities are among the most common in the Backrooms.")
+                wait(w)
+                print("It is speculated that these entities do not have bodies; rather, the darkness is their bodies; however, some researchers beg to differ.")
+            if info_smiler == "b":
+                break
     if br1 == "b":
         print("You observe your environment.")
         
