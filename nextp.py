@@ -106,8 +106,27 @@ while True:
                 print("Sighting of these entities are among the most common in the Backrooms.")
                 wait(w)
                 print("It is speculated that these entities do not have bodies; rather, the darkness is their bodies; however, some researchers beg to differ.")
+                break
             if info_smiler == "b":
                 break
-    if br1 == "b":
-        print("You observe your environment.")
+            else:
+                print("Error, Try again")
+                print("--------------------")
+        break
+    elif br1 == "b":
+                a = "You're present in an expansive non-Euclidean space, resembling the back rooms of a retail outlet."
+                a = "All rooms in Level 0 share the same superficial features, such as worn mono-yellow wallpaper, old moist carpet, scattered electrical outlets, and inconsistently-placed fluorescent lighting. "
+                a = "The fluorescent lighting hums at a constant frequency."
+                a = "Everything seems odd."
+                a = "This buzzing is notably louder and more obtrusive than ordinary fluorescent lights."
+                a = "You suddenly hear someone calling for help."
+                a = 'A noise that sounds like "Help me".'
+                w = 0.3
+                while True:
+                    print("Locate where the noise comes from.")
+                    wait(w)
+                    print("Move away from it and continue.")
+                    
+
+
         
