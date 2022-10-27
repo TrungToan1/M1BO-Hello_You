@@ -52,7 +52,42 @@ while True:
         w = 1
         a = "\nYou stayed in bed. Hoping you'll wake up tommorow"
         typewriter(a) #a1
-
+        wait(w)
+        a = "\n\n4 hours later."
+        typewriter(a)
+        wait(w)
+        a = "\nYou woke up in shock."
+        typewriter(a)
+        wait(w)
+        a = "\nYou can't move."
+        typewriter(a)
+        wait(w)
+        a = "\nYou're breathing heavily."
+        typewriter(a)
+        wait(w)
+        a = "\nYour eyes are teary."
+        typewriter(a)
+        wait(w)
+        a = "\nyou can see the door of your room slowly open"
+        typewriter(a)
+        wait(w)
+        a = "\nYou see a black figure peaking into your room from the side of the doorframe."
+        typewriter(a)
+        wait(w)
+        a = "\nYou want to scream but you can't."
+        typewriter(a)
+        wait(w)
+        a = "\nThe black figure is slowly entering your room."
+        typewriter(a)
+        wait(w)
+        a = "\nYou can see the horrifying bloody smile of the entity."
+        typewriter(a)
+        wait(w)
+        a = "\nBefore it leaped towards your direction."
+        typewriter(a)
+        wait(w)
+        a = "\nYou woke up."
+        typewriter(a)
         break
     
     elif q1 == "b":
@@ -77,6 +112,17 @@ while True:
                 if q1b == "a":
                     a = "You didn't think much of it and headed towards the park"
                     typewriter(a)
+                    wait(w)
+                    a = "\nYou feel like someone is watching you."
+                    typewriter(a)
+                    wait(w)
+                    a = "You see a black figure in the distance shaped like a man leaning against the wall."
+                    typewriter(a)
+                    wait(w)
+                    a = "Your heartrate increases."
+                    typewriter(a)
+                    wait(w)
+                    a = ""
                     
                 elif q1b == "b":
                     a = "You were curious and decided to go to the abandoned factory."
@@ -137,13 +183,38 @@ wait(w)
 a = "\nYour anxiety is swelling, but you soon find a small ledge to get out of the water."
 typewriter(a)
 wait(w)
-a = "There’s no time to relax."
+a = "\nThere’s no time to relax."
 typewriter(a)
 wait(w)
-a = "A shiver goes down your spine as you hear a mysterious splash off in the distance."
+a = "\nA shiver goes down your spine as you hear a mysterious splash off in the distance."
 typewriter(a)
 wait(w)
-a = 
+a = "\nWhile trying to get a clear look, something disappears behind the corner."
+typewriter(a)
+wait(w)
+a = "\nYou continue walking along the ledge."
+typewriter(a)
+wait(w)
+a = "\nThe splashing sounds closer."
+typewriter(a)
+wait(w)
+a = "\nA walk turns into a jog which turns into a sprint."
+typewriter(a)
+wait(w)
+a = "\nYou slip, fall, and hit your head against the wet tile as everything goes black."
+typewriter(a)
+wait(w)
+a = "\nWhen you awake to the chlorine stench, it all starts to rush back."
+typewriter(a)
+w = 2
+wait(w)
+
+a = "\nYOU ARE TRYING TO ESCAPE THE BACKROOMS."
+typewriter(a)
+
+
+
+
             
                
         
