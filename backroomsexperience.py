@@ -5,7 +5,7 @@ def wait(w):
 
 def typewriter(a): #first sentence
     for char in a:
-        sys.stdout.write(char)
+        sys.stdout.write(char) 
         sys.stdout.flush()
         time.sleep(0.03)
 os.system("cls")
@@ -114,7 +114,9 @@ while True:
         w = 1
         wait(w)
         w = 0.5
-        while True:
+
+        done = False
+        while not done:
                 print("\nA. Continue.")
                 wait(w)
                 print("B. Go to the abandoned factory.")
@@ -136,27 +138,33 @@ while True:
                         print("B. Ignore the feeling")
                         watching = input("\nType a or b: ")
                         if watching == "a":
-                            a = "You trust your gut feeling and decided to head back home"
+                            a = "\nYou trust your gut feeling and decided to head back home."
+                            typewriter(a)
+                            wait(w)
                             break
                         elif watching == "b":
-                            a = "\nYou ignored the feeling, you headed towards the park"
+                            a = "\nYou ignored the feeling, you headed towards the park."
+                            typewriter(a)
+                            wait(w)
                             break
+                        
                         else:
                             print("Error, Try again.")
                             print("--------------------------------------------------")
-                    a = "You see a very tall creature in the distance."
+                    
+                    a = "\nYou see a very tall creature in the distance."
                     typewriter(a)
                     wait(w)
-                    a = "\nIt's looking at you in the distance"
+                    a = "\nIt's looking at you in the distance."
                     typewriter(a)
                     wait(w)
                     a = "\nYou're terrified."
                     typewriter(a)
                     wait(w)
-                    a = "\nYou walked into an alleyway hoping it'll lose you"
+                    a = "\nYou walked into an alleyway hoping it'll lose you."
                     typewriter(a)
                     wait(w)
-                    a = "\nYou feel like you're the only person on the planet"
+                    a = "\nYou feel like you're the only person on the planet."
                     typewriter(a)
                     wait(w)
                     a = "\nIt doesn't feel right."
@@ -166,7 +174,7 @@ while True:
                     typewriter(a)
                     wait(w)
                     while True:
-                        print("A. Inspect it")
+                        print("\nA. Inspect it")
                         wait(w)
                         print("B. Ignore it")
                         wall = input("\nType a or b: ")
@@ -180,11 +188,13 @@ while True:
                             a = "\nEverything went black."
                             typewriter(a)
                             wait(w)
-                            a = "\nAnd when you woke up"
+                            a = "\nAnd when you woke up."
                             typewriter(a)
                             wait(w)
+                            
+                            done = True
                             break
-                        
+
                         elif wall == "b":
                             a = "\nYou heard a sound right behind you."
                             slowwriter(a)
@@ -237,10 +247,10 @@ while True:
 
                         elif q1bq == "b":
                             w = 1
-                            a = "You ignored the strange feeling you have in your head"
+                            a = "You ignored the strange feeling you have in your head."
                             typewriter(a)
                             wait(w)
-                            a = "\nYour vision starts to get blurry, you're passing out"
+                            a = "\nYour vision starts to get blurry, you're passing out."
                             typewriter(a)
                             break
                         
@@ -253,7 +263,7 @@ while True:
                     print("Error, Try again")
                     print("--------------------------------------------------")        
         break
-
+    
     else:
         print("Error, Try again.")
         print("------------------------------------------------------------")
@@ -336,7 +346,7 @@ while True:
         a = "\nYour sanity is diminishing."
         typewriter(a)
         wait(w)
-        a = "\nYou see a smiler approaching your way"
+        a = "\nYou see a smiler approaching your way."
         typewriter(a)
         wait(w)
         w = 0.1
@@ -353,7 +363,9 @@ while True:
                 print("Sighting of these entities are among the most common in the Backrooms.")
                 wait(w)
                 print("It is speculated that these entities do not have bodies; rather, the darkness is their bodies; however, some researchers beg to differ.")
-                w = 5
+                wait(w)
+                print("Smilers don't like illuminated areas.")
+                w = 3
                 wait(w)
                 break
             if info_smiler == "b":
@@ -364,6 +376,7 @@ while True:
 
         a = "You see the Smiler slowly approaching you."
         typewriter(a)
+        w = 0.5
         wait(w)
         a = "You don't have much time to think."
         w = 0.5
@@ -403,7 +416,7 @@ while True:
                 a = "\nThe door behind closed."
                 typewriter(a)
                 wait(w)
-                a = '\nA big floating message in the air says "NOBODY LIKES CHEATERS"'
+                a = '\nA big floating message in the air says "NOBODY LIKES CHEATERS".'
                 typewriter(a)
                 wait(w)
                 a = "\nYou've just realized you're in a maze."
@@ -441,10 +454,11 @@ while True:
                     else:
                         print("Error, Try again.")
                         print("--------------------------------------------------")
-                a = "\nIt approaches you in curiosity"
+                a = "\nIt approaches you in curiosity."
+                w = 0.5
                 typewriter(a)
                 wait(w)
-                a = "\nYou feel like you're in danger"
+                a = "\nYou feel like you're in danger."
                 typewriter(a)
                 wait(w)
                 while True:
@@ -462,12 +476,12 @@ while True:
                         a = "\nIt tore your arm off."
                         slowwriter(a)
                         wait(w)
-                        a = "You scream in agony."
+                        a = "\nYou scream in agony."
                         slowwriter(a)
                         wait(w)
-                        print("Ending unlocked: Naivety")
+                        print("\n\nEnding unlocked: Naivety")
                         wait(9999)
-                    elif skin_stealer1 == "b.":
+                    elif skin_stealer1 == "b":
                         a = "You ran away."
                         typewriter(a)
                         wait(w)
@@ -490,7 +504,7 @@ while True:
                         typewriter(a)
                         wait(w)
                         while True:
-                            print("A. Insert coin")
+                            print("\nA. Insert coin")
                             wait(w)
                             print("B. Keep coin")
                             endingmaze = input("\nType a or b: ")
@@ -504,7 +518,7 @@ while True:
                                 print("\n\nUnlocked Ending: Apeirophobic")
                                 break
                             elif endingmaze == "b":
-                                a = "\nYou put the quarter in your pocket and continued"
+                                a = "\nYou put the quarter in your pocket and continued."
                                 typewriter(a)
                                 wait(a)
                                 a = "\nAn arcade machine explodes right as you walked past it."
@@ -522,7 +536,7 @@ while True:
                                 a = "\nYou're in pain."
                                 typewriter(a)
                                 wait(a)
-                                print("\n\nUnlocked Ending: Kakorrhaphiophobia")
+                                print("\n\nUnlocked Ending: Kakorrhaphiophobic")
                                 wait(9999)
                             else:
                                 print("Error, Try again.")
@@ -553,7 +567,7 @@ while True:
                 slowwriter(a)
                 wait(w)
                 print("\n\nUnlocked ending: Inexperienced")
-                break
+                wait(9999)
             else:
                 print("Error, Try again.")
                 print("--------------------------------------------------")
@@ -610,29 +624,34 @@ while True:
                         a = "\nYou can hear the sound of heavy footsteps getting closer."
                         typewriter(a)
                         wait(w)
-                        a = "\nYou died."
-                        typewriter(a)
-                        wait(w)
                         print("\nUnlocked ending: Deception") 
                         wait(9999)
                     elif lvl_0 == "b":
                         a = "\nYou didn't pay much attention to it and continued exploring."
                         typewriter(a)
                         wait(w)
-                        a = "\nYou notice several arrows pointing to 1 location"
+                        a = "\nYou notice several arrows pointing to 1 location."
                         typewriter(a)
                         wait(w)
                         while True:
-                            print("A. Follow the arrows")
-                            wait("B, Go another direction")
-                            arrow = input("type a or b")
+                            print("\nA. Follow the arrows")
+                            wait(w)
+                            print("B, Go another direction")
+                            arrow = input("type a or b: ")
                             if arrow == "a":
                                 a = "You followed the arrows."
+                                slowwriter(a)
+                                wait(w)
                                 a = "You see an open door with white light shining through."
+                                slowwriter(a)
+                                wait(w)
                                 print("Unlocked Ending: You have escaped The Backrooms.")
                                 wait(9999)
                             elif arrow == "b":
                                 a = "You went the opposite direction the arrows pointed at."
-                                a = "You have encountered a tall endoskeleton-like creature."
-                                print("Unlocked Ending: You were so close.")
+                                slowwriter(a)
+                                wait(w)
+                                a = "\nYou have encountered a tall endoskeleton-like creature."
+                                slowwriter(a)
+                                print("\n\nUnlocked Ending: You were so close.")
                                 wait(9999)
